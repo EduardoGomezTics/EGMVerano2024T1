@@ -37,7 +37,7 @@ def plot_pie(datos, marcas_texto):
             labels=marcas_texto)
     
     # Título del gráfico
-    plt.title("Distribución de Sabores", fontsize=20)
+    plt.title("Grafico de pastel", fontsize=20)
     
     # Mostrar el gráfico
     plt.show()
