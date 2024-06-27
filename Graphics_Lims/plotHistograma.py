@@ -33,7 +33,7 @@ def plot_grafHist(frecuencias_relativas, marcas_clase, marcas_texto):
              color=["#37CA64", "#FF99F3", "#37C5CA", "#E74E50", "#FC8C29"])
     
     # Etiquetas para el eje x
-    plt.xticks(x, marcas_texto, fontsize=15, rotation=45)
+    plt.xticks(x, marcas_clase, fontsize=15, rotation=45)
     
     # Título y etiquetas para los ejes
     plt.xlabel("Marcas de clase", fontsize=20)
