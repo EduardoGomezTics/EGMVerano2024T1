@@ -1,37 +1,14 @@
 import math
 def clases_grouped(datos):
-    """
-    Función para agrupar datos en clases y calcular límites inferiores, superiores y marcas de clase.
-    
-    Parámetros:
-    - datos (list): lista de números que representan los datos de entrada
-    
-    Lo que hace:
-    - Calcula el rango de los datos (diferencia entre el máximo y el mínimo)
-    - Calcula el número de clases utilizando la fórmula de Sturges (1 + 3.3 * log(n)/2)
-    - Redondea el número de clases al entero más cercano y resta 1 para evitar clases vacías
-    - Calcula el ancho de cada clase dividiendo el rango entre el número de clases
-    - Inicializa listas para los límites inferiores, superiores y marcas de clase
-    - Itera sobre el número de clases y calcula los límites inferiores, superiores y marcas de clase para cada clase
-    - Agrega el límite superior máximo y la marca de clase correspondiente a la última clase
-    - Convierte la lista de clases en una lista de números enteros (1, 2, 3,...)
-    
-    Devuelve:
-    - clases (list): lista de números enteros que representan las clases
-    - lim_inf (list): lista de números que representan los límites inferiores de cada clase
-    - lim_sup (list): lista de números que representan los límites superiores de cada clase
-    - mrks (list): lista de números que representan las marcas de clase (promedio de los límites inferior y superior)
-    
-    Uso:
-    - Se utiliza para agrupar datos en clases y calcular límites inferiores, superiores y marcas de clase
-    - Se aplica a la lista de datos de entrada para obtener las clases, límites inferiores, superiores y marcas de clase
-    """
     
     # Calcula el rango de los datos
     rango = max(datos) - min(datos)
     
     # Calcula el número de clases utilizando la fórmula de Sturges
-    clases = 1 + 3.3 * (math.log(len(datos))/2)
+    clases = 1+math.log((6))*3.3
+    
+    mostrar = clases
+    print(clases)
     
     # Redondea el número de clases al entero más cercano y resta 1 para evitar clases vacías
     clases_redondear = round(clases)-1
